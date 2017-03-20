@@ -1,4 +1,8 @@
-<h2>More information about {{announcement.name}} on {{announcement.date}}</h2>
-{{update-announcement announcement=model update="update"}}
+<div class="body">
+<h2>Announcement Info:</h2>
 
 {{announcement-detail announcement=model destroyAnnouncement='destroyAnnouncement'}}
+{{update-announcement announcement=model update="update"}}
+<br><br>
+<a href="/">Back</a>
+</div>

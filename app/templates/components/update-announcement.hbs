@@ -10,8 +10,8 @@
       {{input value=date id="date" placeholder=announcement.date type="date"}}
     </div>
 
-    <button {{action 'update' announcement}}>Save</button>
+    <button {{action 'update' announcement}} class="btn">Save</button>
   </form>
 {{else}}
-  <button {{action 'updateAnnouncementForm'}}>Update</button>
+  <button {{action 'updateAnnouncementForm'}} class="btn">Update</button>
 {{/if}}

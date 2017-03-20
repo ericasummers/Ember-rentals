@@ -22,9 +22,9 @@
       <label for="image">Image URL</label>
       {{input value=image id="image"}}
     </div>
-      <button {{action 'saveRental'}}>Save</button>
+      <button {{action 'saveRental'}} class="btn">Save</button>
   </form>
 </div>
 {{else}}
-<button {{action 'rentalFormShow'}}>New Rental</button>
+<button {{action 'rentalFormShow'}} class="btn">New Rental</button>
 {{/if}}

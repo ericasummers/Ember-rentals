@@ -9,9 +9,9 @@
   <label for="date">Enter date</label>
   {{input value=date id="date" type="date"}}
 </div>
-<button {{action 'saveAnnouncement'}}> Save</button>
+<button {{action 'saveAnnouncement'}} class="btn"> Save</button>
   </form>
 </div>
 {{else}}
-<button {{action 'announcementFormShow'}}>Add new announcement</button>
+<button {{action 'announcementFormShow'}} class="btn">Add new announcement</button>
 {{/if}}
