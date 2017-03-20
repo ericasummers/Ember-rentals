@@ -1,7 +1,6 @@
 # super-rentals
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app allows a user to browse properties for rent, as well as adding new properties or deleting properties listed.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <repository-url>` https://github.com/ericaw21/Ember-rentals.git
 * `cd super-rentals`
 * `npm install`
 * `bower install`
@@ -50,3 +49,5 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+Copyright (c) 2017 Erica Wright & Sarah Leahy All Rights Reserved.
