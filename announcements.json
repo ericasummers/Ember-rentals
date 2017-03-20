@@ -1,11 +1,11 @@
 { "announcements": [{
-    "announcement": "Test1",
+    "name": "Test1",
     "date": "2017/03/20"
   }, {
-    "announcement": "Test2",
+    "name": "Test2",
     "date": "2017/03/21"
   }, {
-    "announcement": "Test3",
+    "name": "Test3",
     "date": "2017/03/22"
   }]
 }
