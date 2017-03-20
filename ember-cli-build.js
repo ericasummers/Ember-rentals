@@ -1,13 +1,20 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var app = new EmberApp({
+  sassOptions: {
+    includePaths: [
+      'bower_components/foundation/scss'
+    ]
+  }
+});
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     'ember-bootstrap': {
       'bootstrapVersion': 3,
       'importBootstrapFont': true,
-      'importBootstrapCSS': true
+      'importBootstrapCSS': false
     }
   });
 
