@@ -1,10 +1,20 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(rental) {
-    return this.store.findAll('rental');
+  model() {
+    return Ember.RSVP.hash({
+      rentals: this.store.findAll('rental'),
+      announcements: this.store.findAll('announcement')
+    });
   },
-  actions:{
+
+  setupController(controller, model) {
+    this._super(...arguments);
+    Ember.set(controller, 'rentals', model.rentals);
+    Ember.set(controller, 'announcements', model.announcements);
+  },
+
+  actions: {
     saveRental(params){
       var newRental = this.store.createRecord('rental', params);
       newRental.save();
