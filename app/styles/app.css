@@ -1,0 +1,17 @@
+body {
+  background-color: skyblue;
+}
+
+.welcome {
+  background-color: rgba(35, 102, 187, 0.3);
+  color: white;
+  text-align: center;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.jumbotron {
+  background-color: teal;
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'Ceviche One', cursive;
+}
