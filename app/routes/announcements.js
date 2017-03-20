@@ -9,7 +9,7 @@ export default Ember.Route.extend({
     saveAnnouncement(params){
       var newAnnouncement = this.store.createRecord('announcement', params);
       newAnnouncement.save();
-      this.transitionTo('index');
+      this.transitionTo('announcement');
     }
   }
 });
