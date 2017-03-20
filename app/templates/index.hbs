@@ -2,6 +2,13 @@
   <h1>Welcome to super rentals!</h1>
 </div>
 
+<ul>
+  {{#each announcements as |announcement|}}
+    {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement" update="update"}}
+  {{/each}}
+</ul>
+{{new-announcement saveAnnouncement="saveAnnouncement"}}
+
 <h3>Here are our rentals:</h3>
 
 <ul>
@@ -14,4 +21,3 @@
 
 {{#link-to 'about'}}About us {{/link-to}} <br>
 {{#link-to 'contact'}} Contact us {{/link-to}}<br>
-{{#link-to 'announcements'}} Announcements {{/link-to}}

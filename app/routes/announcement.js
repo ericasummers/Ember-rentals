@@ -1,19 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-
-  model() {
-    return this.store.findAll('announcement');
+  model(params) {
+    return this.store.findRecord('announcement', params.announcement_id);
   },
   actions: {
-    saveAnnouncement(params){
-      var newAnnouncement = this.store.createRecord('announcement', params);
-      newAnnouncement.save();
-      this.transitionTo('announcement');
-    },
     destroyAnnouncement(announcement) {
       announcement.destroyRecord();
-      this.transitionTo('announcement');
+      this.transitionTo('index');
     },
     update(announcement, params) {
       Object.keys(params).forEach(function(key) {
@@ -22,7 +16,7 @@ export default Ember.Route.extend({
         }
       });
       announcement.save();
-      this.transitionTo('announcement');
+      this.transitionTo('index');
     }
   }
 });

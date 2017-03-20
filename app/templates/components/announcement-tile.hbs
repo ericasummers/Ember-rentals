@@ -1,6 +1,3 @@
 <li>
-  {{announcement.name}} on {{announcement.date}}
-  {{update-announcement announcement=announcement update="update"}}
-  
+  {{#link-to 'announcement' announcement.id}}{{announcement.name}} on {{announcement.date}}{{/link-to}}
 </li>
-<button {{action 'delete' announcement}}>Delete</button>
